@@ -1,0 +1,5 @@
+var/cache/*
+var/locks/*
+var/package/tmp/*
+var/session/*
+downloader/.cache/*
