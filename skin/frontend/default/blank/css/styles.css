@@ -436,16 +436,16 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Header ================================================================================ */
-.logo { float:left; }
+.logo { float:left; display: none}
 .header-container {}
-.header { padding:10px; border:1px solid #ddd; }
+.header { padding:30px 70px 10px; border:none; }
 .header .logo { float:left; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; padding:0; }
 .header .welcome-msg { font-weight:bold; text-align:right; }
 .header .welcome-msg a {}
 .header .links { float:right; }
-.header .form-search { text-align:right; }
+.header .form-search { text-align:right; width: 100%; }
 .header .form-search .search-autocomplete { z-index:999; }
 .header .form-search .search-autocomplete ul { border:1px solid #ddd; background-color:#fff; }
 .header .form-search .search-autocomplete li { padding:3px; border-bottom:1px solid #ddd; cursor:pointer; }
@@ -453,6 +453,47 @@ tr.summary-details-excluded { font-style:italic; }
 .header .form-search .search-autocomplete li.selected {}
 .header .form-language { clear:both; text-align:right; }
 .header-container .top-container { clear:both; text-align:right; }
+
+.form-search-label {
+    margin-top: 5px;
+    width: 34px;
+    height: 15px;
+    display: block;
+    float:left;
+    background: url("../images/search-label.png") no-repeat;
+}
+
+.form-search-button {
+    margin-top: 5px;
+    width: 43px;
+    height: 15px;
+    display: inline-block;
+    background: url("../images/search-button.png") no-repeat;
+    border: none;
+}
+
+.my-search-button {
+    width: 43px;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+#search {
+    background-color: #B8B8B8;
+    color: white;
+    width: 100%;
+}
+.search-input-container{
+    padding-right: 48px;
+    padding-left: 34px;
+}
+.search-button-container{
+    width: 48px;
+    float: right;
+    margin-left: -43px;
+}
 
 /********** < Navigation */
 .nav-container {}
